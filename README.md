@@ -25,10 +25,14 @@ It is very easy to use
 # How to run
 
 1. Install requirements 
-   1.1  Python 3.6 above versions
-   1.2  Django 3.1 above versions
-   1.3 Pillow
-   1.4 Django-ckeditor
+
+       1.1  Python 3.6 above versions
+       
+       1.2  Django 3.1 above versions
+       
+       1.3 Pillow
+       
+       1.4 Django-ckeditor
    
 2. Default
    You can run the application from the command line with manage.py. Go to the root folder of the application.
