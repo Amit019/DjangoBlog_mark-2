@@ -3,17 +3,24 @@ This is Blog website  reated in Django
 
 # About
 
-This is a Simple project for practicing Django. The idea was to build some basic blogging platform.
+This is a simple project to practice Django. The idea was to create some basic blogging platforms.
 
-It was made using Python 3.6 + Django and database is SQLite. Bootstrap 5 was used for styling. 
+It was built using Python 3.6 + Django and the database is SQLite. Bootstrap 5 was used for styling.
 
-There is a login and registration functionality included.
+It includes a login and registration functionality.
 
-User has his own blog page, where he can add new blog posts and new Categories. Every one can comment on posts 
+The user has his own blog page, where he can add new blog posts and new categories. Can comment on each of the posts
 
-Every authenticated user can likes and dislikes on posts made by other users.
+Each authenticated user can like and dislike posts made by other users.
 
-It very Easy to Used
+It is very easy to use
+
+# Features
+
+ 1. Font Hand user interface for Add Blog Posts and Categories
+ 2. Add new features easily
+ 3. Add new style easily and replace old style (style.css)
+ 
 
 # How to run
 
