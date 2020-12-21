@@ -37,30 +37,35 @@ It is very easy to use
     
     >>  python manage.py migrate
     
-    >>  python manage.py runserver 8000
+    >>>  python manage.py runserver 8000
     
 
 #  Django Admin
      
-     Default  superUser was created
+     . Default  superUser was created
      
-     Default Username admin
+     .  Default Username admin
      
-     Default Password admin
+     .  Default Password admin
      
-     Default Email Id  admin@gmail.com
+     . Default Email Id  admin@gmail.com
      
-  It is possible to add additional admin user who can login to the admin site. Run the following command:
+ It is possible to add an additional admin user who can login to the admin site. Run the following command:
   
   python manage.py createsuperuser
+    
+  Enter your choice username and press Enter
   
-  Username: admin_username (Enter your desired username and press enter.)
+  Username: admin_username 
   
-  Email address: admin@example.com  (You will then be prompted for your desired email address:)
+  You will then be prompted for your email address:
   
-  The final step is to enter your password. You will be asked to enter your password twice, the second time as a confirmation of the first.
+  Email address: admin@example.com  
+  
+  The final step is to enter your desired password. You will be asked to enter your password twice, the second time as a confirmation of the first.
+  
   Password: **********
   Password (again): *********
   Superuser created successfully.
 
-  Go to the web browser and visit http://localhost:8000/admin
+  Go to the browser and visit http://localhost:8000/admin
