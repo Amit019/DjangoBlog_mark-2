@@ -42,30 +42,32 @@ It is very easy to use
 
 #  Django Admin
      
-     . Default  superUser was created
+     .  Default  superUser is create
      
-     .  Default Username admin
+     .  Default Username ==> admin
      
-     .  Default Password admin
+     .  Default Password  ==> admin
      
-     . Default Email Id  admin@gmail.com
+     . Default Email address ==> admin@gmail.com
      
  It is possible to add an additional admin user who can login to the admin site. Run the following command:
   
-  python manage.py createsuperuser
+    python manage.py createsuperuser
     
   Enter your choice username and press Enter
   
-  Username: admin_username 
+    Username: admin_username 
   
   You will then be prompted for your email address:
   
-  Email address: admin@example.com  
+    Email address: admin@example.com  
   
   The final step is to enter your desired password. You will be asked to enter your password twice, the second time as a confirmation of the first.
   
-  Password: **********
-  Password (again): *********
-  Superuser created successfully.
+     Password: **********
+  
+     Password (again): *********
+  
+     Superuser created successfully.
 
   Go to the browser and visit http://localhost:8000/admin
