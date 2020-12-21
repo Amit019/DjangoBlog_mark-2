@@ -1,5 +1,5 @@
 # DjangoBlog_mark-2
-This is Blog website  reated in Django 
+This is Blog website  created in Django 
 
 # About
 
