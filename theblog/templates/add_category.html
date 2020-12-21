@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{%block title%}
+create a Category
+{% endblock %}
+{% block contact %}
+<div class="site-section py-0">
+    <div class="site-section">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-md-12">
+                    {% if user.is_authenticated %}
+                    <h1>Add Blog Category.........</h1>
+                    <form action="" method="POST">
+                        <div class="form-group">
+
+                            {%csrf_token %}
+                            {{form.as_p}}
+                            <button class="btn btn-success">Add category</button>
+
+                        </div>
+                    </form>
+                    {%else%}
+                    <h1> You are not allowed here !</h1>
+
+                    {%endif%}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

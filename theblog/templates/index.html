@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block contact %}
+<div class="site-section py-0">
+    <div class="site-section">
+        <div class="container">
+            <h1>Posts</h1>
+
+
+            {% for post in object_list %}
+            <ul>
+                <li><a href="{% url 'article' post.pk %}">{{post.title}}</a>--
+                    <a href="{% url 'category' post.category%}"> {{post.category}}</a> --
+                    {{post.publish.date}}
+                    by
+                    {%if post.author.first_name %}
+                    {{post.author.first_name}} {{post.author.last_name}}
+                    {%else%}
+                    {{post.author.username}}
+                    {%endif%}
+                    <br>
+                    <small>{{post.snippets}}</small>
+
+
+                </li>
+            </ul>
+            {% endfor%}
+        </div>
+    </div>
+</div>
+{% endblock %}

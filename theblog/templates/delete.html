@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{%block title%}
+Delete Post
+{% endblock %}
+{% block contact %}
+<div class="site-section py-0">
+    <div class="site-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    {% if user.is_authenticated %}
+
+                    {%if user.id == post.author.id%}
+                    <h1>Delete Blog Post</h1>
+                    <form action="" method="POST">
+                        <div class="form-group">
+                            {%csrf_token %}
+                            <h3><strong>Are you sure? </strong>
+                                <strong>{{post.title}} </strong>
+                            </h3></br>
+                            <button class="btn btn-secondary">Delete post!</button>
+
+                        </div>
+                    </form>
+                    
+                    {%else%}
+                    <h1> You are not allowed here !</h1>
+
+                    {%endif%}
+                    {%else%}
+                    <h1> You are not allowed here !</h1>
+
+                    {%endif%}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
