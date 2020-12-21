@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contact %}
+
+<div class="container">
+  <div class="row pb-5">
+    <div class="col-md-12">
+      <h1>User Profile..........</h1>
+      <div class="card" style="width: 50%;">
+        {% if page_user.profile_pic %}
+        <a href="{%url 'profile_page' page_user.id%}">
+          <img class="card-img-top" src="{{page_user.profile_pic.url}}" alt="">
+        </a>
+        {%else%}
+        <img class="card-img-top" src="{%static ''%}theblog/images/defualt_user_img.png" alt="">
+        {%endif%}
+
+        <div class="card-body">
+          <h3 class="card-title">
+            {%if post.author.first_name %}
+            {{page_user.user.first_name}} {{page_user.user.last_name}}
+            {%else%}
+            {{page_user.user.username}} 
+            {%endif%}
+            
+            
+          </h3>
+          <p class="card-text">
+          <p class="small text-muted">
+            {%if page_user.website_url %}
+            <a href="{{page_user.website_url}}"> Website</a>
+            {%endif%}
+            {%if page_user.facebook_url %}
+            <a href="{{page_user.facebook_url}}">| facebook </a>
+            {%endif%}
+            {%if page_user.instagram_url %}
+            <a href="{{page_user.instagram_url}}">| Twitter </a>
+            {%endif%}
+            {%if page_user.twitter_url %}
+            <a href="{{page_user.twitter_url}}">| Instagram</a>
+          </p>
+          {%endif%}
+          <p>{{page_user.bio}}.</p>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+{% endblock %}

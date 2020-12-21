@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{%block title%}
+Profile
+{% endblock %}
+{% block contact %}
+<div class="site-section py-0">
+    <div class="site-section">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-md-12">
+                    <h1>Setting Profile</h1>
+                    <br><br>
+                    {{user.profile.bio}}
+                    <form action="" method="POST">
+                        <div class="form-group">
+
+                            {%csrf_token %}
+                            {{form.as_p}}
+                            <button class="btn btn-success">Update</button>
+
+                        </div>
+                    </form>
+                    <br><br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    {% endblock %}
